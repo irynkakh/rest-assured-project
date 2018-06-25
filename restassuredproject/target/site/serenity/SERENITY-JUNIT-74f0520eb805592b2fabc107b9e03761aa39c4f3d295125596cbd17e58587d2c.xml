@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="FindPetsByStatusCheck" skipped="0" tests="3" time="5.82" timestamp="2018-06-25T10:32:06.409+02:00[Europe/Belgrade]"><testcase classname="FindPetsByStatusCheck" name="User can check status value in find by status"/></testsuite>

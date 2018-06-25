@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="FindByIdCheck" skipped="0" tests="5" time="10.65"
+           timestamp="2018-06-25T00:25:36.061+02:00[Europe/Belgrade]">
+    <testcase classname="FindByIdCheck" name="User can check id value in find by id"/>
+</testsuite>

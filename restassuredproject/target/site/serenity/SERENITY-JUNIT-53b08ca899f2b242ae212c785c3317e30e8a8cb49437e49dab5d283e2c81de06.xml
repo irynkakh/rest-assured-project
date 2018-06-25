@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="FindByStatusCheck" skipped="0" tests="3" time="6.63"
+           timestamp="2018-06-24T15:22:01.681+02:00[Europe/Belgrade]">
+    <testcase classname="FindByStatusCheck" name="User can check status value in find by status"/>
+</testsuite>

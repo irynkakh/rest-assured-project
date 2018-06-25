@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>User can check status value in find by status</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+        > User can check status value in find by status
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-06-2018 10:32</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Find Pets By Status Check</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                    <span class="success-color">
+                                    User Can Check Status Value In Find By Status
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario Outline</h3>
+
+        <div class="scenario">Get find by status: &lt;query&gt;<br>Check status: {dto.RootObject@2d82e94f,dto.RootObject@526ace3d,dto.RootObject@499d4109,dto.RootObject@2434532f,dto.RootObject@1e461e77,dto.RootObject@1a5920a4,dto.RootObject@396fbfef,dto.RootObject@3fc42ec6,dto.RootObject@115f2aef,dto.RootObject@42d06460,dto.RootObject@6843b12,dto.RootObject@18a8871a,dto.RootObject@70c8deb2,dto.RootObject@31fa47af,dto.RootObject@1601a629,dto.RootObject@4acd63a4,dto.RootObject@7cc61901,dto.RootObject@1f62ee09,dto.RootObject@4493322,dto.RootObject@25b8a04c,dto.RootObject@69fabbeb,dto.RootObject@61e0027b,dto.RootObject@2c7dfd46,dto.RootObject@4c278245,dto.RootObject@70be5dc9,dto.RootObject@112c7a7f,dto.RootObject@527822d1,dto.RootObject@22bda771,dto.RootObject@206fe6fa,dto.RootObject@52e28f0a,dto.RootObject@419f512d,dto.RootObject@ed6e040,dto.RootObject@51518f56,dto.RootObject@170dd0a9,dto.RootObject@2c20fd5c,dto.RootObject@154dcc78,dto.RootObject@483bcab8,dto.RootObject@31cac38e,dto.RootObject@1a2b02f6,dto.RootObject@61fe33c7,dto.RootObject@77865b4a,dto.RootObject@10b73087,dto.RootObject@5249acd5,dto.RootObject@42b9cd50,dto.RootObject@7a08246,dto.RootObject@2ebaa93d,dto.RootObject@318a973b,dto.RootObject@3d551f17,dto.RootObject@3e640849,dto.RootObject@45ecbdf9,dto.RootObject@203ac930,dto.RootObject@3582d787,dto.RootObject@2bbaa73e,dto.RootObject@b99c4c5,dto.RootObject@7d9cefcf,dto.RootObject@5e012114,dto.RootObject@20fcfebd,dto.RootObject@6506a98b,dto.RootObject@7ffed073,dto.RootObject@28a05719,dto.RootObject@6f6e4da6,dto.RootObject@3f74eb31,dto.RootObject@3680c9e4,dto.RootObject@1cb248b2,dto.RootObject@12c35ff,dto.RootObject@19196b88,dto.RootObject@29e65ea6,dto.RootObject@279f64f0,dto.RootObject@47fc2e31,dto.RootObject@15eb586d,dto.RootObject@e633718,dto.RootObject@52076ac0,dto.RootObject@74ac5b17,dto.RootObject@3b4b5ddf,dto.RootObject@2c877659,dto.RootObject@453f4863,dto.RootObject@53ddc730,dto.RootObject@3219cd31,dto.RootObject@253b4095,dto.RootObject@1a786801,dto.RootObject@2721c839,dto.RootObject@5bade9a9,dto.RootObject@246d35a1,dto.RootObject@7d8c794d,dto.RootObject@544516c5,dto.RootObject@60914d45,dto.RootObject@2d9caccb,dto.RootObject@33c4fe24,dto.RootObject@4fcb35a7,dto.RootObject@255ab27e,dto.RootObject@6d68a8ea,dto.RootObject@79494ebd,dto.RootObject@6fb92a3e,dto.RootObject@1f00bcf5,dto.RootObject@37077807,dto.RootObject@408f4fc,dto.RootObject@22c6d699,dto.RootObject@38bb3120,dto.RootObject@34f0b170,dto.RootObject@779c1c06,dto.RootObject@637a7e72,dto.RootObject@2a9610c,dto.RootObject@33e32b18,dto.RootObject@24087d4e,dto.RootObject@14b10e53,dto.RootObject@5d59bcc8,dto.RootObject@77c8f790,dto.RootObject@10cd062a,dto.RootObject@c1251f6,dto.RootObject@1cbd1340,dto.RootObject@2c791330,dto.RootObject@54fdacc3,dto.RootObject@4afeca4b,dto.RootObject@3e2df747,dto.RootObject@5aa99321,dto.RootObject@630ba703,dto.RootObject@5f1b85bb,dto.RootObject@e5dd6d0,dto.RootObject@18fb6ca1,dto.RootObject@2676e302,dto.RootObject@25c39c2a,dto.RootObject@45482514,dto.RootObject@615d778,dto.RootObject@176a5a4b,dto.RootObject@2e71a640,dto.RootObject@2a15561f,dto.RootObject@293fa32,dto.RootObject@47ee5029,dto.RootObject@648ebd32,dto.RootObject@642bba12,dto.RootObject@79749ecf,dto.RootObject@4c2ee6d0,dto.RootObject@5d58a54a,dto.RootObject@649a7fd9,dto.RootObject@39c51763,dto.RootObject@2e67eed,dto.RootObject@1a0ce90e,dto.RootObject@2ddf3921,dto.RootObject@3c305df6,dto.RootObject@d905d8b,dto.RootObject@70a991ae,dto.RootObject@24eba8ab,dto.RootObject@1a8a8e2d,dto.RootObject@15f9f4f2,dto.RootObject@29613302,dto.RootObject@50367875,dto.RootObject@1e836fb8,dto.RootObject@440756fe,dto.RootObject@645e945f,dto.RootObject@748bd71,dto.RootObject@2b3fc8f,dto.RootObject@7cfdfa81,dto.RootObject@6c91652d,dto.RootObject@2ef0eefb,dto.RootObject@33ba382e,dto.RootObject@2000e52a,dto.RootObject@47df440a,dto.RootObject@6ef1ed3c,dto.RootObject@c68d384,dto.RootObject@2be65e96,dto.RootObject@1624b0f4,dto.RootObject@775d2701,dto.RootObject@3d633e9d,dto.RootObject@2468c549,dto.RootObject@17f87220,dto.RootObject@9833af1,dto.RootObject@2d307a8a,dto.RootObject@4f10b0e8,dto.RootObject@1bada258,dto.RootObject@be9576e,dto.RootObject@25a388b3,dto.RootObject@6ffeeb1f,dto.RootObject@19b72bda,dto.RootObject@58245da5,dto.RootObject@61fbb002,dto.RootObject@79451931,dto.RootObject@590c1438,dto.RootObject@233fa3c9,dto.RootObject@1f786c0c,dto.RootObject@4e256243,dto.RootObject@77b1126b,dto.RootObject@29ced6bf,dto.RootObject@758ac786,dto.RootObject@10d8840e,dto.RootObject@6f05ee34,dto.RootObject@3021a645,dto.RootObject@13b4f130,dto.RootObject@4798efbc,dto.RootObject@72cdd35,dto.RootObject@3a82501b,dto.RootObject@e8b1b0a,dto.RootObject@eeef068,dto.RootObject@6fca51f5,dto.RootObject@47e0d69f,dto.RootObject@11e5c622,dto.RootObject@687119c6,dto.RootObject@5509b8c4,dto.RootObject@141cd8d4,dto.RootObject@2bf7c8a3,dto.RootObject@4b284b32,dto.RootObject@537f050b,dto.RootObject@21d7adc8,dto.RootObject@3470cb81,dto.RootObject@3d8867e6,dto.RootObject@16747a01,dto.RootObject@a512cea,dto.RootObject@38cfd2e2,dto.RootObject@4686354a,dto.RootObject@7397fbe9,dto.RootObject@70a2bf0d,dto.RootObject@36bc2b39,dto.RootObject@416764c1,dto.RootObject@de387b7,dto.RootObject@68dc0bd1,dto.RootObject@3fee0010,dto.RootObject@45553a40}, &lt;query&gt;</div>
+
+    </div>
+
+    <div id="beforetable"></div>
+
+
+        <h3 class="story-header">Examples:</h3>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                        <th>Test Description</th>
+                        <th>Query</th>
+                        <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">query with available status</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">available</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">available</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#1">2</a></td>
+                            <td class="test-SUCCESS"><a href="#1">query with pending status</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">pending</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">pending</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#2">3</a></td>
+                            <td class="test-SUCCESS"><a href="#2">query with sold status</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">sold</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">sold</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                    <th width="%" class="step-description-wide-column greentext">
+                        Steps
+                    </th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                            <span class="top-level-step">User can check status value in find by status </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.94s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Get find by status: available</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.94s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Check status: {dto.RootObject@2d82e94f,dto.RootObject@526ace3d,dto.RootObject@499d4109,dto.RootObject@2434532f,dto.RootObject@1e461e77,dto.RootObject@1a5920a4,dto.RootObject@396fbfef,dto.RootObject@3fc42ec6,dto.RootObject@115f2aef,dto.RootObject@42d06460,dto.RootObject@6843b12,dto.RootObject@18a8871a,dto.RootObject@70c8deb2,dto.RootObject@31fa47af,dto.RootObject@1601a629,dto.RootObject@4acd63a4,dto.RootObject@7cc61901,dto.RootObject@1f62ee09,dto.RootObject@4493322,dto.RootObject@25b8a04c,dto.RootObject@69fabbeb,dto.RootObject@61e0027b,dto.RootObject@2c7dfd46,dto.RootObject@4c278245,dto.RootObject@70be5dc9,dto.RootObject@112c7a7f,dto.RootObject@527822d1,dto.RootObject@22bda771,dto.RootObject@206fe6fa,dto.RootObject@52e28f0a,dto.RootObject@419f512d,dto.RootObject@ed6e040,dto.RootObject@51518f56,dto.RootObject@170dd0a9,dto.RootObject@2c20fd5c,dto.RootObject@154dcc78,dto.RootObject@483bcab8,dto.RootObject@31cac38e,dto.RootObject@1a2b02f6,dto.RootObject@61fe33c7,dto.RootObject@77865b4a,dto.RootObject@10b73087,dto.RootObject@5249acd5,dto.RootObject@42b9cd50,dto.RootObject@7a08246,dto.RootObject@2ebaa93d,dto.RootObject@318a973b,dto.RootObject@3d551f17,dto.RootObject@3e640849,dto.RootObject@45ecbdf9,dto.RootObject@203ac930,dto.RootObject@3582d787,dto.RootObject@2bbaa73e,dto.RootObject@b99c4c5,dto.RootObject@7d9cefcf,dto.RootObject@5e012114,dto.RootObject@20fcfebd,dto.RootObject@6506a98b,dto.RootObject@7ffed073,dto.RootObject@28a05719,dto.RootObject@6f6e4da6,dto.RootObject@3f74eb31,dto.RootObject@3680c9e4,dto.RootObject@1cb248b2,dto.RootObject@12c35ff,dto.RootObject@19196b88,dto.RootObject@29e65ea6,dto.RootObject@279f64f0,dto.RootObject@47fc2e31,dto.RootObject@15eb586d,dto.RootObject@e633718,dto.RootObject@52076ac0,dto.RootObject@74ac5b17,dto.RootObject@3b4b5ddf,dto.RootObject@2c877659,dto.RootObject@453f4863,dto.RootObject@53ddc730,dto.RootObject@3219cd31,dto.RootObject@253b4095,dto.RootObject@1a786801,dto.RootObject@2721c839,dto.RootObject@5bade9a9,dto.RootObject@246d35a1,dto.RootObject@7d8c794d,dto.RootObject@544516c5,dto.RootObject@60914d45,dto.RootObject@2d9caccb,dto.RootObject@33c4fe24,dto.RootObject@4fcb35a7,dto.RootObject@255ab27e,dto.RootObject@6d68a8ea,dto.RootObject@79494ebd,dto.RootObject@6fb92a3e,dto.RootObject@1f00bcf5,dto.RootObject@37077807,dto.RootObject@408f4fc,dto.RootObject@22c6d699,dto.RootObject@38bb3120,dto.RootObject@34f0b170,dto.RootObject@779c1c06,dto.RootObject@637a7e72,dto.RootObject@2a9610c,dto.RootObject@33e32b18,dto.RootObject@24087d4e,dto.RootObject@14b10e53,dto.RootObject@5d59bcc8,dto.RootObject@77c8f790,dto.RootObject@10cd062a,dto.RootObject@c1251f6,dto.RootObject@1cbd1340,dto.RootObject@2c791330,dto.RootObject@54fdacc3,dto.RootObject@4afeca4b,dto.RootObject@3e2df747,dto.RootObject@5aa99321,dto.RootObject@630ba703,dto.RootObject@5f1b85bb,dto.RootObject@e5dd6d0,dto.RootObject@18fb6ca1,dto.RootObject@2676e302,dto.RootObject@25c39c2a,dto.RootObject@45482514,dto.RootObject@615d778,dto.RootObject@176a5a4b,dto.RootObject@2e71a640,dto.RootObject@2a15561f,dto.RootObject@293fa32,dto.RootObject@47ee5029,dto.RootObject@648ebd32,dto.RootObject@642bba12,dto.RootObject@79749ecf,dto.RootObject@4c2ee6d0,dto.RootObject@5d58a54a,dto.RootObject@649a7fd9,dto.RootObject@39c51763,dto.RootObject@2e67eed,dto.RootObject@1a0ce90e,dto.RootObject@2ddf3921,dto.RootObject@3c305df6,dto.RootObject@d905d8b,dto.RootObject@70a991ae,dto.RootObject@24eba8ab,dto.RootObject@1a8a8e2d,dto.RootObject@15f9f4f2,dto.RootObject@29613302,dto.RootObject@50367875,dto.RootObject@1e836fb8,dto.RootObject@440756fe,dto.RootObject@645e945f,dto.RootObject@748bd71,dto.RootObject@2b3fc8f,dto.RootObject@7cfdfa81,dto.RootObject@6c91652d,dto.RootObject@2ef0eefb,dto.RootObject@33ba382e,dto.RootObject@2000e52a,dto.RootObject@47df440a,dto.RootObject@6ef1ed3c,dto.RootObject@c68d384,dto.RootObject@2be65e96,dto.RootObject@1624b0f4,dto.RootObject@775d2701,dto.RootObject@3d633e9d,dto.RootObject@2468c549,dto.RootObject@17f87220,dto.RootObject@9833af1,dto.RootObject@2d307a8a,dto.RootObject@4f10b0e8,dto.RootObject@1bada258,dto.RootObject@be9576e,dto.RootObject@25a388b3,dto.RootObject@6ffeeb1f,dto.RootObject@19b72bda,dto.RootObject@58245da5,dto.RootObject@61fbb002,dto.RootObject@79451931,dto.RootObject@590c1438,dto.RootObject@233fa3c9,dto.RootObject@1f786c0c,dto.RootObject@4e256243,dto.RootObject@77b1126b,dto.RootObject@29ced6bf,dto.RootObject@758ac786,dto.RootObject@10d8840e,dto.RootObject@6f05ee34,dto.RootObject@3021a645,dto.RootObject@13b4f130,dto.RootObject@4798efbc,dto.RootObject@72cdd35,dto.RootObject@3a82501b,dto.RootObject@e8b1b0a,dto.RootObject@eeef068,dto.RootObject@6fca51f5,dto.RootObject@47e0d69f,dto.RootObject@11e5c622,dto.RootObject@687119c6,dto.RootObject@5509b8c4,dto.RootObject@141cd8d4,dto.RootObject@2bf7c8a3,dto.RootObject@4b284b32,dto.RootObject@537f050b,dto.RootObject@21d7adc8,dto.RootObject@3470cb81,dto.RootObject@3d8867e6,dto.RootObject@16747a01,dto.RootObject@a512cea,dto.RootObject@38cfd2e2,dto.RootObject@4686354a,dto.RootObject@7397fbe9,dto.RootObject@70a2bf0d,dto.RootObject@36bc2b39,dto.RootObject@416764c1,dto.RootObject@de387b7,dto.RootObject@68dc0bd1,dto.RootObject@3fee0010,dto.RootObject@45553a40}, available</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">User can check status value in find by status </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.94s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Get find by status: pending</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.93s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Check status: {dto.RootObject@2c16fcfe,dto.RootObject@b8c2ad1,dto.RootObject@360131a2,dto.RootObject@43561f45,dto.RootObject@583ceadd,dto.RootObject@328c89a9,dto.RootObject@d3f327b}, pending</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                            <span class="top-level-step">User can check status value in find by status </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.94s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Get find by status: sold</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.93s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Check status: {dto.RootObject@53603985,dto.RootObject@30e7f609,dto.RootObject@4cb72f2b}, sold</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>5.82s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+    <div id="bottomfooter">
+        <span class="version">Serenity BDD version 1.5.1</span>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            }
+            else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('.example-table table').DataTable({
+            "order": [[0, "asc"]],
+            "pageLength": 25,
+            "scrollX": "100%",
+            "scrollXInner": "100%",
+            "scrollCollapse": true
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>

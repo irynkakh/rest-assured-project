@@ -1,0 +1,93 @@
+{
+  "name": "checkFilteringByStatus",
+  "id": "TestApi:checkFilteringByStatus",
+  "testCaseName": "TestApi",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Check filtering by status ",
+      "duration": 3768,
+      "startTime": "2018-06-22T15:59:30.368+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false
+    },
+    {
+      "number": 2,
+      "description": "Check filtering by status ",
+      "duration": 2046,
+      "startTime": "2018-06-22T15:59:30.370+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false
+    },
+    {
+      "number": 3,
+      "description": "Check filtering by status ",
+      "duration": 2012,
+      "startTime": "2018-06-22T15:59:30.370+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false
+    }
+  ],
+  "userStory": {
+    "id": "TestApi",
+    "storyName": "Test api",
+    "storyClassName": "TestApi",
+    "path": "",
+    "type": "story"
+  },
+  "featureTag": {
+    "name": "Test api",
+    "type": "story"
+  },
+  "title": "Check filtering by status",
+  "tags": [
+    {
+      "name": "Test api",
+      "type": "story"
+    }
+  ],
+  "startTime": "2018-06-22T15:59:30.242+02:00[Europe/Belgrade]",
+  "duration": 0,
+  "dataTable": {
+    "headers": [
+      "test description",
+      "query",
+      "result"
+    ],
+    "rows": [
+      {
+        "values": [
+          "query with available status",
+          "available",
+          "available"
+        ],
+        "result": "UNDEFINED"
+      },
+      {
+        "values": [
+          "query with pending status",
+          "pending",
+          "pending"
+        ],
+        "result": "UNDEFINED"
+      },
+      {
+        "values": [
+          "query with sold status",
+          "sold",
+          "sold"
+        ],
+        "result": "UNDEFINED"
+      }
+    ],
+    "predefinedRows": false,
+    "dataSetDescriptors": [
+      {
+        "startRow": 0,
+        "rowCount": 0
+      }
+    ]
+  },
+  "manual": false,
+  "result": "SUCCESS"
+}

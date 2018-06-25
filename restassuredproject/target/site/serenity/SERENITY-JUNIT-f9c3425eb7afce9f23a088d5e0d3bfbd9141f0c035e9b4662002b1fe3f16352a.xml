@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="TestApi" skipped="3" tests="3" time="7.83"
+           timestamp="2018-06-22T15:59:30.242+02:00[Europe/Belgrade]">
+    <testcase classname="TestApi" name="Check filtering by status"/>
+</testsuite>

@@ -1,0 +1,261 @@
+{
+  "name": "userCanCheckIdValueInFindById",
+  "id": "FindByIdCheck:userCanCheckIdValueInFindById",
+  "testCaseName": "FindByIdCheck",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "User can check id value in find by id ",
+      "duration": 2131,
+      "startTime": "2018-06-25T00:25:36.127+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 2,
+          "description": "Check status code: 1, 200",
+          "duration": 1542,
+          "startTime": "2018-06-25T00:25:33.892+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 3,
+          "description": "Get find by id mapping: 1",
+          "duration": 589,
+          "startTime": "2018-06-25T00:25:35.437+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 4,
+          "description": "Check id: dto.RootObject@4f94d787, 1",
+          "duration": 0,
+          "startTime": "2018-06-25T00:25:36.027+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "description": "User can check id value in find by id ",
+      "duration": 2132,
+      "startTime": "2018-06-25T00:25:36.128+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 6,
+          "description": "Check status code: 10, 200",
+          "duration": 1542,
+          "startTime": "2018-06-25T00:25:33.892+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 7,
+          "description": "Get find by id mapping: 10",
+          "duration": 590,
+          "startTime": "2018-06-25T00:25:35.437+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 8,
+          "description": "Check id: dto.RootObject@7d0162e1, 10",
+          "duration": 0,
+          "startTime": "2018-06-25T00:25:36.027+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "description": "User can check id value in find by id ",
+      "duration": 2131,
+      "startTime": "2018-06-25T00:25:36.128+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 10,
+          "description": "Check status code: 23471, 200",
+          "duration": 1542,
+          "startTime": "2018-06-25T00:25:33.892+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 11,
+          "description": "Get find by id mapping: 23471",
+          "duration": 589,
+          "startTime": "2018-06-25T00:25:35.437+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 12,
+          "description": "Check id: dto.RootObject@1ca72572, 23471",
+          "duration": 0,
+          "startTime": "2018-06-25T00:25:36.027+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "description": "User can check id value in find by id ",
+      "duration": 2130,
+      "startTime": "2018-06-25T00:25:36.129+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 14,
+          "description": "Check status code: bla, 404",
+          "duration": 1542,
+          "startTime": "2018-06-25T00:25:33.892+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 15,
+          "description": "Get find by id mapping: bla",
+          "duration": 587,
+          "startTime": "2018-06-25T00:25:35.437+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 16,
+          "description": "Check id: dto.ErrorDto@28ed2d4d, Invalid ID supplied",
+          "duration": 1,
+          "startTime": "2018-06-25T00:25:36.025+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "description": "User can check id value in find by id ",
+      "duration": 2130,
+      "startTime": "2018-06-25T00:25:36.130+02:00[Europe/Belgrade]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 18,
+          "description": "Check status code: 000, 404",
+          "duration": 1542,
+          "startTime": "2018-06-25T00:25:33.892+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 19,
+          "description": "Get find by id mapping: 000",
+          "duration": 587,
+          "startTime": "2018-06-25T00:25:35.437+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        },
+        {
+          "number": 20,
+          "description": "Check id: dto.ErrorDto@3ef089ac, Pet not found",
+          "duration": 1,
+          "startTime": "2018-06-25T00:25:36.025+02:00[Europe/Belgrade]",
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    }
+  ],
+  "userStory": {
+    "id": "FindByIdCheck",
+    "storyName": "Find by id check",
+    "storyClassName": "FindByIdCheck",
+    "path": "",
+    "type": "story"
+  },
+  "featureTag": {
+    "name": "Find by id check",
+    "type": "story"
+  },
+  "title": "User can check id value in find by id",
+  "tags": [
+    {
+      "name": "Find by id check",
+      "type": "story"
+    }
+  ],
+  "startTime": "2018-06-25T00:25:36.061+02:00[Europe/Belgrade]",
+  "duration": 0,
+  "dataTable": {
+    "headers": [
+      "test description",
+      "id",
+      "result",
+      "status"
+    ],
+    "rows": [
+      {
+        "values": [
+          "query with id\u003d1",
+          "1",
+          "1",
+          "200"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "query with id\u003d10",
+          "10",
+          "10",
+          "200"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "query with id\u003d23471",
+          "23471",
+          "23471",
+          "200"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "query with invalid id",
+          "bla",
+          "Invalid ID supplied",
+          "404"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "query with id\u003d000",
+          "000",
+          "Pet not found",
+          "404"
+        ],
+        "result": "SUCCESS"
+      }
+    ],
+    "predefinedRows": false,
+    "dataSetDescriptors": [
+      {
+        "startRow": 0,
+        "rowCount": 0
+      }
+    ]
+  },
+  "manual": false,
+  "result": "SUCCESS"
+}
