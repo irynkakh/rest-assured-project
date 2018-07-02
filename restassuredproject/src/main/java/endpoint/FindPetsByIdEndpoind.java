@@ -10,7 +10,7 @@ public class FindPetsByIdEndpoind {
 
     public Response getFindById(String id) {
         Response response = given().pathParam("pet", id).
-                when().get("http://petstore.swagger.io/v2/pet/{pet}");
+                when().get("https://petstore.swagger.io/v2/pet/{pet}");
         return response;
     }
 

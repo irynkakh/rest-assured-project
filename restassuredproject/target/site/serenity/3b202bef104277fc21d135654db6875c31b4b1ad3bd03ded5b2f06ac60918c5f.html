@@ -73,7 +73,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-06-2018 10:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-07-2018 14:52</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -106,9 +106,10 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x'
+                                                          title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                    <span class="success-color">
+                                    <span class="failing-color">
                                     User Can Check Id Value In Find By Id
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -125,7 +126,9 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Check status code: {{&lt;result&gt;}}, &lt;status&gt;<br>Get find by id mapping: {{&lt;result&gt;}}<br>Check id: dto.RootObject@49e9326f, {{&lt;result&gt;}}</div>
+        <div class="scenario">Check status code: {{&lt;result&gt;}}, &lt;status&gt;<br>Get find by id mapping: {{&lt;result&gt;}}<br>Check
+            id: dto.RootObject@7c4423d8, {{&lt;result&gt;}}
+        </div>
 
     </div>
 
@@ -168,14 +171,14 @@
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#2">3</a></td>
-                            <td class="test-SUCCESS"><a href="#2">query with id=23471</a>
+                        <td class="test-FAILURE"><a href="#2">3</a></td>
+                        <td class="test-FAILURE"><a href="#2">query with id=23471</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#2">23471</a>
+                        <td class="test-FAILURE"><a href="#2">23471</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#2">23471</a>
+                        <td class="test-FAILURE"><a href="#2">23471</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#2">200</a>
+                        <td class="test-FAILURE"><a href="#2">200</a>
                             </td>
                     </tr>
                     <tr>
@@ -239,7 +242,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.1s</span></td>
+                    <td width="100"><span class="top-level-step">2.93s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -258,7 +261,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                    <td width="100"><span class="nested-group-step">2.02s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -273,7 +276,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.59s</span></td>
+                    <td width="100"><span class="nested-group-step">0.91s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -283,7 +286,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check id: dto.RootObject@49e9326f, 1</span>
+                            <span class="nested-group-step">Check id: dto.RootObject@7c4423d8, 1</span>
 
                         </div>
                     </td>
@@ -313,7 +316,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.1s</span></td>
+                    <td width="100"><span class="top-level-step">2.93s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -332,7 +335,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                    <td width="100"><span class="nested-group-step">2.02s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -347,7 +350,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.59s</span></td>
+                    <td width="100"><span class="nested-group-step">0.91s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -357,7 +360,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check id: dto.RootObject@3a738fb2, 10</span>
+                            <span class="nested-group-step">Check id: dto.RootObject@357fe6ff, 10</span>
 
                         </div>
                     </td>
@@ -368,12 +371,12 @@
                     </table>
                     </td>
                     <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                <i class="fa fa-plus-square-o imgstepSection2 failure-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -386,18 +389,19 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.1s</span></td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">2.03s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection2" style="display:none; width:100%">
 
-                <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon '
+                                                               title='FAILURE'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -405,14 +409,60 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                            <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                            <td width="100"><span class="nested-group-step">2.03s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="4" class="error-message-cell">
+                                <div class="error-message ellipsis"
+                                     title='Assertion error: Status code is not as expectedExpected: &quot;200&quot; but: was &quot;404&quot;'>
+                                    <pre>Assertion error: Status code is not as expectedExpected: &quot;200&quot; but: was &quot;404&quot;</pre>
+                                </div>
+                                <div><!-- Stack trace -->
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#stacktraceModal-10">
+                                        View stack trace
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="stacktraceModal-10" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                                    java.lang.AssertionError
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>Status code is not as expected<br>Expected: "200"<br> but: was "404"
+                                                </h5>
+                                                steps.FindPetsByIdApiSteps.checkStatusCode(FindPetsByIdApiSteps.java
+                                                :23) <br>
+                                                FindPetsByIdCheck.userCanCheckIdValueInFindById(FindPetsByIdCheck.java
+                                                :44) <br>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon '
+                                                               title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -420,22 +470,23 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.59s</span></td>
+                            <td width="100"><span class="nested-group-step">SKIPPED</span></td>
+                            <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                        <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-fast-forward skipped-icon '
+                                                               title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check id: dto.RootObject@51d1baf7, 23471</span>
+                            <span class="nested-group-step">Check id: &lt;null&gt;, 23471</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                            <td width="100"><span class="nested-group-step">SKIPPED</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
@@ -461,7 +512,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.09s</span></td>
+                    <td width="100"><span class="top-level-step">2.94s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -480,7 +531,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                    <td width="100"><span class="nested-group-step">2.3s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -495,7 +546,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.59s</span></td>
+                    <td width="100"><span class="nested-group-step">0.64s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -505,7 +556,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check id: dto.ErrorMessage@2d7beae4, Pet not found</span>
+                            <span class="nested-group-step">Check id: dto.ErrorMessage@16d27a8, Pet not found</span>
 
                         </div>
                     </td>
@@ -535,7 +586,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.09s</span></td>
+                    <td width="100"><span class="top-level-step">2.92s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -554,7 +605,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.51s</span></td>
+                    <td width="100"><span class="nested-group-step">2.02s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -569,7 +620,7 @@
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.59s</span></td>
+                    <td width="100"><span class="nested-group-step">0.9s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -579,7 +630,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check id: dto.ErrorMessage@7e5e81a5, Pet not found</span>
+                            <span class="nested-group-step">Check id: dto.ErrorMessage@5f9a3a50, Pet not found</span>
 
                         </div>
                     </td>
@@ -590,10 +641,10 @@
                     </table>
                     </td>
                     <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>10.48s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>13.75s</em></span></td>
                 </tr>
 
             </table>

@@ -28,7 +28,7 @@ public class FindPetsByIdApiSteps {
         if (rootId.getClass().isInstance(RootObject.class)) {
             RootObject rootObject = RootObject.class.cast(rootId);
             if (rootObject.getId() != null) {
-                assertThat("Id is not as expected", rootObject.getId().toString(), equalTo(result));
+                assertThat("Id is not as expected", rootObject.getId()/*.toString()*/, equalTo(result));
             }
         } else if (rootId.getClass().isInstance(ErrorMessage.class)) {
             ErrorMessage errorMessage = ErrorMessage.class.cast(rootId);
