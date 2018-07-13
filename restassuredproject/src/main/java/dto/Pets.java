@@ -1,9 +1,10 @@
 package dto;
 
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 
-public class RootObject {
+public class Pets {
     private BigInteger id;
     private Category category;
     private String name;
@@ -59,3 +60,4 @@ public class RootObject {
         this.status = status;
     }
 }
+

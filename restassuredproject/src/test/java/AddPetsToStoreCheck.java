@@ -1,3 +1,4 @@
+import io.restassured.response.Response;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.Concurrent;
@@ -12,7 +13,6 @@ import java.util.Collection;
 
 @RunWith(SerenityParameterizedRunner.class)
 @Concurrent
-//@RunWith(SerenityRunner.class)
 public class AddPetsToStoreCheck {
 
     private String id;
@@ -55,8 +55,8 @@ public class AddPetsToStoreCheck {
 
     @Test
     public void userCanAddPetsToTheStore() {
-        addPetsToStoreApiSteps.addPetsToStore(id, categoryId, categoryName, name, photoUrls, tagsId, tagsName, status);
-        Object actualId = findPetsByIdApiSteps.getFindByIdMapping(id);
-        findPetsByIdApiSteps.checkId(actualId, id);
+        Response response = addPetsToStoreApiSteps.addPetsToStore(id, categoryId, categoryName, name, photoUrls, tagsId, tagsName, status);
+        findPetsByIdApiSteps.checkId(response, id);
+        findPetsByIdApiSteps.checkName(response, name);
     }
 }

@@ -1,4 +1,4 @@
-import dto.RootObject;
+import io.restassured.response.Response;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.Concurrent;
@@ -13,7 +13,6 @@ import java.util.Collection;
 @RunWith(SerenityParameterizedRunner.class)
 @Concurrent
 public class FindPetsByStatusCheck {
-
     private final String comment;
     private final String query;
     private final String result;
@@ -38,7 +37,7 @@ public class FindPetsByStatusCheck {
 
     @Test
     public void userCanCheckStatusValueInFindByStatus() {
-        RootObject[] actualStatus = findPetsByStatusApiSteps.getFindByStatus(query);
+        Response actualStatus = findPetsByStatusApiSteps.getFindByStatus(query);
         findPetsByStatusApiSteps.checkStatus(actualStatus, result);
     }
 }

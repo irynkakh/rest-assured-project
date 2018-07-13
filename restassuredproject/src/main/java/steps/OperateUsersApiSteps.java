@@ -1,6 +1,5 @@
 package steps;
 
-import dto.UserDetails;
 import endpoint.OperateUsersIntoSystemEndpoint;
 import io.restassured.response.Response;
 import net.thucydides.core.annotations.Step;
@@ -9,23 +8,22 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
 public class OperateUsersApiSteps {
+
     OperateUsersIntoSystemEndpoint operateUsersIntoSystemEndpoint = new OperateUsersIntoSystemEndpoint();
 
     @Step
-    public void checkIsUserCreated(String firstName, String lastName, String username, String password, int userStatus, String phone, String email) {
-        Response response = operateUsersIntoSystemEndpoint.createUser(firstName, lastName, username, password, userStatus, phone, email);
+    public void createUser(String firstName, String lastName, String username, String password, int userStatus, String phone,
+                           String email) {
+        Response response = operateUsersIntoSystemEndpoint.createUser(firstName, lastName, username, password, userStatus,
+                phone, email);
         assertThat("Status code is not as expected", response.getStatusCode(), equalTo(200));
     }
 
     @Step
-    public UserDetails getInfoAboutUser(String username) {
-        UserDetails response = operateUsersIntoSystemEndpoint.getUser(username);
-        return response;
-    }
-
-    @Step
-    public void checkUserName(UserDetails user, String username) {
-        assertThat("There is no info about such user", user.getUsername(), equalTo(username));
+    public void getInfoAboutUser(String username) {
+        Response response = operateUsersIntoSystemEndpoint.getUserByUserName(username);
+        String actualUsername = response.path("username");
+        assertThat("Username is not as expected", actualUsername, equalTo(username));
     }
 
     @Step
@@ -38,7 +36,8 @@ public class OperateUsersApiSteps {
     public void checkIsUserDeleted(String username) {
         Response response = operateUsersIntoSystemEndpoint.deleteUser(username);
         assertThat("User is not deleted", response.getStatusCode(), equalTo(200));
-        assertThat("User is still not deleted", operateUsersIntoSystemEndpoint.getUserByUserName(username).getStatusCode(), equalTo(404));
+        assertThat("User is still not deleted", operateUsersIntoSystemEndpoint.getUserByUserName(username).getStatusCode(),
+                equalTo(404));
     }
 
     @Step

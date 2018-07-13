@@ -1,4 +1,3 @@
-import dto.UserDetails;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.Concurrent;
@@ -46,11 +45,11 @@ public class OperateUserCheck {
 
     @Test
     public void logUserIntoTheSystem() {
-        operateUsersApiSteps.checkIsUserCreated(firstName, lastName, username, password, userStatus, phone, email);
-        UserDetails userNameActual = operateUsersApiSteps.getInfoAboutUser(username);
-        operateUsersApiSteps.checkUserName(userNameActual, username);
+        operateUsersApiSteps.createUser(firstName, lastName, username, password, userStatus, phone, email);
+        operateUsersApiSteps.getInfoAboutUser(username);
         operateUsersApiSteps.checkIsUserLogged(username, password);
         operateUsersApiSteps.checkIsUserLoggedOut();
         operateUsersApiSteps.checkIsUserDeleted(username);
     }
 }
+

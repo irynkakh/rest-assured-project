@@ -1,7 +1,8 @@
 package endpoint;
 
+import configuration.Configuration;
 import dto.Category;
-import dto.RootObject;
+import dto.Pets;
 import io.restassured.response.Response;
 
 import java.math.BigInteger;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
 
-public class AddPetToStoreEndpoint {
+public class AddPetsToStoreEndpoint extends Configuration {
 
     public Response addPets(String idString, String idCatString, String nameCategory, String name, String photoUrlsString,
                             String idTagString, String nameTag, String status) {
@@ -21,15 +22,15 @@ public class AddPetToStoreEndpoint {
         ArrayList<Category> tags = new ArrayList<>();
         tags.add(tagsCategory);
         ArrayList<String> photoUrls = photoUrlsConfiguration(photoUrlsString);
-        RootObject jsonConfig = jsonConfiguration(id, category, name, photoUrls, tags, status);
+        Pets jsonConfig = jsonConfiguration(id, category, name, photoUrls, tags, status);
         Response response = given().header("Content-Type", "application/json").body(jsonConfig).
-                when().post("https://petstore.swagger.io/v2/pet");
+                when().post("/pet");
         return response;
     }
 
-    private RootObject jsonConfiguration(BigInteger id, Category category, String name, ArrayList<String> photoUrls,
-                                         ArrayList<Category> tags, String status) {
-        RootObject rootObject = new RootObject();
+    private Pets jsonConfiguration(BigInteger id, Category category, String name, ArrayList<String> photoUrls,
+                                   ArrayList<Category> tags, String status) {
+        Pets rootObject = new Pets();
         rootObject.setId(id);
         rootObject.setCategory(category);
         rootObject.setName(name);

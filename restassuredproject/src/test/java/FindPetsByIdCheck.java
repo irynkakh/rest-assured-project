@@ -1,3 +1,4 @@
+import io.restassured.response.Response;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.Concurrent;
@@ -15,34 +16,29 @@ public class FindPetsByIdCheck {
     private final String comment;
     private final String id;
     private final String result;
-    private final String code;
 
     @Steps
     private FindPetsByIdApiSteps findPetsByIdApiSteps;
 
-    public FindPetsByIdCheck(String comment, String id, String result, String code) {
+    public FindPetsByIdCheck(String comment, String id, String result) {
         this.comment = comment;
         this.id = id;
         this.result = result;
-        this.code = code;
     }
 
-    @TestData(columnNames = "test description, id, result, status")
+    @TestData(columnNames = "test description, id, result")
     public static Collection<Object[]> testData() {
         return Arrays.asList(new Object[][]{
-                {"query with id=1", "1", "1", "200"},
-                {"query with id=10", "10", "10", "200"},
-                {"query with id=23471", "23471", "23471", "200"},
-                {"query with id=bla", "bla", "Pet not found", "404"},
-                {"query with id=000", "000", "Pet not found", "404"},
-
+                {"query with id=2", "2", "2"},
+                {"query with id=10", "10", "10"},
+                {"query with id=23471", "23471", "23471"}
         });
     }
 
     @Test
     public void userCanCheckIdValueInFindById() {
-        findPetsByIdApiSteps.checkStatusCode(id, code);
-        Object actualId = findPetsByIdApiSteps.getFindByIdMapping(id);
+        String api_key = "2222";
+        Response actualId = findPetsByIdApiSteps.getFindById(api_key, id);
         findPetsByIdApiSteps.checkId(actualId, result);
     }
 }
