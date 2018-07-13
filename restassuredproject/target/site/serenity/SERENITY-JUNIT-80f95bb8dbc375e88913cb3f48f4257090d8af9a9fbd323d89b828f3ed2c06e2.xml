@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="OperateUserCheck" skipped="0" tests="2" time="4.71" timestamp="2018-07-05T14:31:15.203+02:00[Europe/Belgrade]"><testcase classname="OperateUserCheck" name="Log user into the system"><failure message="Status code is not as expected&#10;Expected: &lt;200&gt;&#10;     but: was &lt;500&gt;" type="java.lang.AssertionError">Status code is not as expected
-Expected: &lt;200&gt;
-     but: was &lt;500&gt;</failure><system-err>Status code is not as expected
-Expected: &lt;200&gt;
-     but: was &lt;500&gt;&#13;
-steps.OperateUsersApiSteps.checkIsUserCreated(OperateUsersApiSteps.java:17)&#13;
-OperateUserCheck.logUserIntoTheSystem(OperateUserCheck.java:49)&#13;
-</system-err></testcase></testsuite>

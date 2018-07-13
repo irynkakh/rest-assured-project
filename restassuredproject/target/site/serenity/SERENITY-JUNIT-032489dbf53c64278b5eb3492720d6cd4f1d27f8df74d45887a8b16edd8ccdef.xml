@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" name="TestApi" skipped="0" tests="3" time="5.81"
-           timestamp="2018-06-22T16:24:55.350+02:00[Europe/Belgrade]">
-    <testcase classname="TestApi" name="User can check status value in find by status"/>
-</testsuite>
